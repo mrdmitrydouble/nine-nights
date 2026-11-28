@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0F171D">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://mrdmitrydouble.github.io/nine-nights/nepal/dnevnik/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Дневник с тропы · Исследуем × Непал">
+<meta property="og:description" content="Алина и Дима в Гималаях: день за днём, фото и что дальше">
+<meta property="og:url" content="https://mrdmitrydouble.github.io/nine-nights/nepal/dnevnik/">
+<meta property="og:image" content="https://mrdmitrydouble.github.io/nine-nights/nepal/dnevnik/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Дневник с тропы · Исследуем × Непал">
+<meta name="twitter:description" content="Алина и Дима в Гималаях: день за днём, фото и что дальше">
+<meta name="twitter:image" content="https://mrdmitrydouble.github.io/nine-nights/nepal/dnevnik/og.png">
+<link rel="preload" as="image" href="photo/oblozhka.jpg" fetchpriority="high">
+<title>Дневник с тропы · Исследуем × Непал</title>
+<meta name="description" content="Алина и Дима на треке Марди-Химал: где мы сейчас, что прошли и что дальше.">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preload" href="fonts/jost-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/golos-text-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/amatic-sc-700.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Jost";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/jost-500.woff2") format("woff2")}
+@font-face{font-family:"Golos Text";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/golos-text-400.woff2") format("woff2")}
+@font-face{font-family:"Amatic SC";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/amatic-sc-700.woff2") format("woff2")}</style>
+<style>
+/* Сбор на тропе, v11. Два гротеска: Jost (заголовки, суммы, кнопки) и Golos Text (всё остальное); файлы шрифтов свои, без сторонних адресов.
+   Три роли — три кегля на экран: --t1 заголовок (22 px), --t2 рассказ (17 px), --t3 служебное (13 px, приглушённо).
+   Исключения: название места на обложке (--t0) и сумма сбора (--tsum). Акцент только у кнопок, ссылок, раскрытий и маркера. Один радиус --r. */
+@font-face{font-family:"Golos Fallback";src:local("Arial"),local("ArialMT"),local("Liberation Sans"),local("Helvetica Neue"),local("Roboto");size-adjust:105.5%;ascent-override:94%;descent-override:21%;line-gap-override:0%}
+@font-face{font-family:"Jost Fallback";src:local("Arial"),local("ArialMT"),local("Liberation Sans"),local("Helvetica Neue"),local("Roboto");size-adjust:96%;ascent-override:104%;descent-override:30%;line-gap-override:0%}
+:root{
+  /* палитра «своя»: токены сайта Алины (бумага, чернила, мох, охра), сверены пипеткой с фото обложки и 26.11 */
+  --bg:#F4F1E8; --surface:#FCFBF6; --fg:#1C2A25; --muted:#5B6A60; --line:#CFC8B6; --line-2:#A59D88; --ph:#ECE7DA;
+  --accent:#B87418; --accent-ink:#1C1305; --link:#3E5A36; --here:#8A5A12;
+  --give:#15241F; --give-2:#1C2F28; --chalk:#EDEADF; --chalk-soft:#C9CDBF; --give-link:#E3A548;
+  --night:#0D1613; --snow:#F6EFD8;
+  --map-bg:var(--bg); --sky:#2F6684; --yak:var(--muted);
+  --f-body:"Golos Text","Golos Fallback",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-disp:"Jost","Jost Fallback","Avenir Next","Helvetica Neue",system-ui,sans-serif;
+  --f-mono:var(--f-body); --f-hand:var(--f-body);
+  --t0:clamp(2.6rem,12.4vw,3.7rem); --tsum:2.25rem; --t1:1.375rem; --t2:1.0625rem; --t3:.8125rem;
+  --r:6px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1613; --surface:#15241F; --fg:#EDEADF; --muted:#A2B3A8; --line:#3C5149; --line-2:#5C7268; --ph:#1C2F28;
+  --accent:#E3A548; --accent-ink:#0D1613; --link:#B5CFA4; --here:#E3A548; --give:#15241F; --give-2:#1C2F28; --sky:#B5CFA4; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1613; --surface:#15241F; --fg:#EDEADF; --muted:#A2B3A8; --line:#3C5149; --line-2:#5C7268; --ph:#1C2F28;
+  --accent:#E3A548; --accent-ink:#0D1613; --link:#B5CFA4; --here:#E3A548; --give:#15241F; --give-2:#1C2F28; --sky:#B5CFA4; color-scheme:dark}
+:root,body{background:var(--bg);color:var(--fg)}
+body{margin:0;font:400 var(--t2)/1.55 var(--f-body);-webkit-text-size-adjust:100%;overflow-x:hidden}
+*,*::before,*::after{box-sizing:border-box}
+h1,h2,h3,p,ul,ol,figure,blockquote,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3,.disp{font-family:var(--f-disp);font-weight:500;letter-spacing:-.005em}
+h3{font-size:var(--t2);line-height:1.3}
+a{color:var(--link);text-underline-offset:3px}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.sm{font-size:var(--t3);line-height:1.45;color:var(--muted)}
+
+.in{max-width:560px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.scr{padding-block:28px 0}   /* F6: между секциями не больше ~48 px пустоты (вместе с отступами карточек) */
+.scr h2{font-size:var(--t1);line-height:1.1}
+.lead{color:var(--muted);margin-top:8px;max-width:40ch}
+
+/* ---------- кнопка, ссылка, раскрытие: у каждого типа один вид ---------- */
+.btn{display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 24px;margin-top:20px;border-radius:var(--r);background:var(--accent);color:var(--accent-ink);
+  font:500 var(--t2)/1 var(--f-disp);text-decoration:none;max-width:100%;white-space:nowrap}
+.btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;flex:0 0 18px}
+.lnk{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0;border:0;background:none;color:var(--link);text-decoration:underline;text-underline-offset:3px;cursor:pointer;font:inherit}
+.act{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid var(--line-2);border-radius:var(--r);background:transparent;color:var(--fg);font:400 var(--t3)/1 var(--f-body);cursor:pointer}
+.act svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;flex:0 0 16px}
+.give .act{border-color:var(--chalk-soft);color:var(--chalk)}
+.lnk svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 16px}
+details>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;min-height:44px}
+details>summary::-webkit-details-marker{display:none}
+details>summary::after{content:"";flex:0 0 8px;width:8px;height:8px;margin:-4px 4px 0 auto;border-right:2px solid var(--link);border-bottom:2px solid var(--link);transform:rotate(45deg)}
+details[open]>summary::after{transform:rotate(225deg);margin-top:4px}
+
+/* ---------- 1. обложка: фото во весь экран, текст через затемнение, линия маршрута внизу ---------- */
+html{scroll-snap-type:y proximity}
+.scr,.cover{scroll-snap-align:start}
+.cover{position:relative;overflow:hidden;background:var(--night);color:#fff;isolation:isolate;
+  min-height:calc(100vh - 56px);min-height:calc(100svh - 56px);display:flex;flex-direction:column;justify-content:flex-end}
+.cover-ph{position:absolute;inset:0;z-index:-1}
+.cover-ph img{width:100%;height:100%;object-fit:cover}
+.cover-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,22,19,.25) 0,rgba(13,22,19,0) 14%,rgba(13,22,19,0) 50%,rgba(13,22,19,.45) 64%,rgba(13,22,19,.82) 82%,rgba(13,22,19,.92) 100%)}
+.pin{position:absolute;left:0;top:0;display:none;pointer-events:none;z-index:1}
+.pin.on{display:block}
+.pin svg{display:block;overflow:visible}
+.pin line{stroke:#fff;stroke-width:1.2}
+.pin circle{fill:#fff}
+.pin text{font:400 13px var(--f-body);fill:#fff;paint-order:stroke;stroke:rgba(13,22,19,.45);stroke-width:3px}
+.cover.v13 .pin text{font:500 13px var(--f-disp);stroke:rgba(13,22,19,.75);stroke-width:4px;stroke-linejoin:round}   /* v13.1: читаемо на облаках */
+.cover.v13 .pin line{stroke-width:2;filter:drop-shadow(0 0 2px rgba(13,22,19,.6))}
+.cover.v13 .pin circle{r:4px;stroke:rgba(13,22,19,.7);stroke-width:1.5}
+.pin.nol line,.pin.nol circle{display:none}   /* обложка_метка.выноска = false: только слово, без линии и точки */
+.cover .low{width:100%;position:relative}
+.cover .by,.cover .meta{font-size:var(--t3);line-height:1.4;color:rgba(255,255,255,.88)}
+.cover h1{font-size:var(--t0);line-height:1;margin:6px 0 8px;overflow-wrap:anywhere}
+.cover .about{margin-top:10px;max-width:34ch;color:#fff}
+.cover .low>*{text-shadow:0 1px 3px rgba(0,0,0,.5),0 2px 16px rgba(0,0,0,.45)}
+.stripw{position:relative;width:100%;max-width:560px;margin:14px auto 34px}
+.nextq{position:absolute;right:max(12px,env(safe-area-inset-right,0px));bottom:-12px;display:inline-flex;align-items:center;gap:4px;min-height:44px;min-width:44px;padding:0 4px;font-size:var(--t3);color:var(--chalk-soft);text-decoration:none}
+.nextq span{font-size:var(--t3)}
+.strip{display:block;width:100%;height:auto;max-width:560px;margin:0 auto;padding:0 max(10px,env(safe-area-inset-right,0px)) 0 max(10px,env(safe-area-inset-left,0px));overflow:visible}
+.strip .s-net{fill:none;stroke:rgba(238,241,238,.22);stroke-width:1.4;stroke-linejoin:round}
+.strip .s-todo{fill:none;stroke:rgba(238,241,238,.55);stroke-width:1.4;stroke-dasharray:3 4;stroke-linecap:round}
+.strip .done{fill:none;stroke:var(--snow);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.strip .glow{fill:none;stroke:#FEFBE3;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;opacity:.22}
+.strip .dot{fill:#E3A548;stroke:var(--night);stroke-width:1.2}
+.strip .ring{stroke:#E3A548}
+.strip .endq{font:400 12.7px var(--f-body);fill:var(--chalk-soft)}   /* рисунок растянут на ~2,5 %: на экране 13 px */
+.dot{fill:var(--accent);stroke:var(--bg);stroke-width:1.5}
+.ring{fill:none;stroke:var(--accent);stroke-width:2;transform-box:fill-box;transform-origin:center}
+@media (prefers-reduced-motion:no-preference){.ring{animation:ping 2.2s ease-out infinite}@keyframes ping{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.6);opacity:0}}}
+
+/* ---------- 2. прошли: карусель (единственное горизонтальное место) ---------- */
+.scr.past{}   /* v11.1: после обложки обычный межсекционный отступ */
+.hrowt{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.ccount{flex:0 0 auto;display:flex;align-items:center;gap:6px;font-size:var(--t3);color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}   /* «1 / 7» у заголовка секции */
+.car{display:flex;align-items:stretch;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;
+  margin-top:16px;padding:0 max(16px,env(safe-area-inset-left,0px)) 2px;scroll-padding-inline:max(16px,env(safe-area-inset-left,0px));scrollbar-width:none}
+.car::-webkit-scrollbar{display:none}
+.carr{width:16px;height:10px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+/* выглядывающие карточки приглушены, пока не долистали до них */
+.car:not(.list) .day{transition:opacity .25s}
+.car:not(.list) .day:not(.cur){opacity:.6}
+.car:focus-visible{outline-offset:-3px}
+@media (min-width:640px){.car{padding-inline:calc((100% - 528px)/2);scroll-padding-inline:calc((100% - 528px)/2)}}
+.day{position:relative;flex:0 0 88%;max-width:460px;scroll-snap-align:start;background:var(--surface);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column}
+.lbo{display:block;padding:0;margin:0;border:0;background:var(--ph);cursor:zoom-in;-webkit-tap-highlight-color:transparent}
+/* соседняя карточка выглядывает на ~13 % ширины экрана (88 % ленты); все карточки одной высоты:
+   лишнюю высоту короткой карточки забирает фото (растёт вниз), под карточкой нет полосы фона */
+.slot{position:relative;width:100%;aspect-ratio:5/4;overflow:hidden;flex:1 0 auto}
+.thumbs .th[hidden]{display:none}   /* в ленте до трёх; остальные листаются в просмотрщике */
+.slot img{width:100%;height:100%;object-fit:cover}
+/* день без фото в карусели: кусок профиля этого дня на месте фото (растягивается по высоте карточки) */
+.slot.mp{background:var(--ph);order:2;aspect-ratio:auto;min-height:120px}   /* под текстом: карточка читается сверху, профиль добирает высоту */
+.slot.mp svg{position:absolute;inset:0;width:100%;height:100%}
+.mp-fill{fill:var(--fg);opacity:.07}
+.mp-line{fill:none;stroke:var(--line-2);stroke-width:1.5;vector-effect:non-scaling-stroke}
+.mp-done{fill:none;stroke:var(--fg);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.mpd{position:absolute;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;background:var(--fg)}
+.mpd.b{background:var(--bg);border:2px solid var(--fg)}
+.dbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.day h3{font-size:var(--t1);line-height:1.2}
+.dmeta,.phcap{font-size:var(--t3);line-height:1.4;color:var(--muted)}
+.phcap{padding:6px 16px 0}   /* подпись вплотную к фото, до даты и места — отступ */
+.day:not(:has(.slot)) .dbody{flex:1 0 auto}
+.dtext,.detail,.bytb{line-height:1.5}
+.quote p{font-family:var(--f-disp);font-weight:500;line-height:1.35}
+.quote cite{display:block;margin-top:2px;font-style:normal;font-size:var(--t3);color:var(--muted)}
+.was{margin-top:8px;font-size:var(--t3);line-height:1.45;color:var(--muted)}   /* «был вопрос / план был» — отдельно, после рассказа, помечен словом */
+.was b{font-weight:400;color:var(--fg)}
+.was svg{display:none}
+.thumbs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:4px}
+.thumbs .th{width:100%;aspect-ratio:1/1;min-width:96px;border-radius:var(--r);overflow:hidden}
+.thumbs.one{grid-template-columns:1fr}.thumbs.one .th{aspect-ratio:16/9}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.prelist{display:flex;flex-direction:column;gap:6px}
+/* дни_вид = «список»: те же карточки столбиком, без листания вбок */
+.car.list{display:flex;flex-direction:column;gap:16px;overflow:visible;scroll-snap-type:none;padding:0 max(16px,env(safe-area-inset-left,0px))}
+@media (min-width:640px){.car.list{max-width:560px;margin-inline:auto}}
+.car.list .day{flex:0 0 auto;max-width:none}
+.car.list .slot{aspect-ratio:4/3}
+.prelist .pd{color:var(--muted);font-size:var(--t3);margin-right:8px}
+
+/* находки */
+.gal{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;
+  margin-top:16px;padding:0 max(16px,env(safe-area-inset-left,0px)) 4px;scroll-padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.gal::-webkit-scrollbar{display:none}
+@media (min-width:640px){.gal{padding-inline:calc((100% - 528px)/2);scroll-padding-inline:calc((100% - 528px)/2)}}
+.gi{flex:0 0 58%;max-width:260px;scroll-snap-align:start}
+.gi .gph{width:100%;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden}
+.gi img{width:100%;height:100%;object-fit:cover}
+.gi figcaption{margin-top:6px;font-size:var(--t3);line-height:1.4;color:var(--muted);padding-right:8px}
+
+/* ---------- 3. путь: профиль и план одной лестницей ---------- */
+.mapbox{margin-top:16px}
+.mapbox svg{display:block;width:100%;height:auto}
+.m-net{fill:none;stroke:var(--line-2);stroke-width:1.2}
+.m-done{fill:none;stroke:var(--fg);stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round}
+.m-plan{fill:none;stroke:var(--line-2);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.m-todo{fill:none;stroke:var(--muted);stroke-width:1.6;stroke-dasharray:4 4;stroke-linecap:round}
+.m-st{fill:var(--bg);stroke:var(--fg);stroke-width:1.5}
+.m-st.p{fill:var(--fg);stroke:var(--fg)}
+.m-t{font:13px var(--f-body);fill:var(--fg);paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.m-t tspan.h{font:13px var(--f-body);fill:var(--muted);font-variant-numeric:tabular-nums}
+.m-here{font:500 17px var(--f-disp);fill:var(--here);paint-order:stroke;stroke:var(--bg);stroke-width:5px;stroke-linejoin:round}
+.m-ax{font:13px var(--f-body);fill:var(--muted);font-variant-numeric:tabular-nums}
+.m-grid{stroke:var(--line);stroke-width:1}
+.m-area{fill:var(--fg);opacity:.07}
+.m-ln{stroke:var(--muted);stroke-width:1}
+.m-q{font:13px var(--f-body);fill:var(--muted)}
+.we .dot{stroke:var(--bg)}
+.legend{display:flex;flex-wrap:wrap;gap:2px 16px;margin-top:6px;font-size:var(--t3);color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:8px}
+.legend svg{flex:0 0 24px;width:24px;height:10px;overflow:visible}
+.route{margin-top:20px}
+.route li{display:grid;grid-template-columns:62px minmax(0,1fr) auto;gap:0 12px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}
+.route .rd{font-size:var(--t3);color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px;white-space:nowrap}
+.route .rp{min-width:0}
+.route .rp b{font-weight:400}
+.route .rx,.route .rq{display:block;font-size:var(--t3);line-height:1.4;color:var(--muted)}
+.route .rq{color:var(--fg)}
+.route .done .rp b{color:var(--muted)}
+.rh{margin-top:28px}
+.rdone{margin-top:10px;border-top:1px solid var(--line)}
+.rdone>summary{color:var(--muted)}
+.rdone .route{margin-top:0}
+.rdone+.route{margin-top:0}
+.rlead{display:block;margin-top:10px;font-size:var(--t3);line-height:1.4;color:var(--muted)}
+.endgive{margin-top:32px;padding-top:20px;border-top:1px solid var(--line)}
+.endgive>h3{font-family:var(--f-disp);font-size:var(--t1);line-height:1.1;margin-top:0}
+.endgive .alt-i+.alt-i{border-color:var(--line)}
+.endgive .pline{margin-top:12px}
+.endgive .under{color:var(--muted)}
+.endgive .alt{border-color:var(--line)}
+.endgive .alt>summary{color:var(--fg)}
+.endgive .alt-n{color:var(--muted)}
+.endgive .sok{color:var(--muted)}
+.rwide{grid-column:1/-1;display:block;margin-top:6px}
+.route .rph{display:block;width:100%;aspect-ratio:4/3;margin-top:8px;border-radius:var(--r);overflow:hidden}
+.route .rph img,.mb .rph img{width:100%;height:100%;object-fit:cover}
+.mb .rph{display:block;width:100%;max-width:320px;aspect-ratio:4/3;border-radius:var(--r);overflow:hidden}
+.rcap{display:block;margin-top:6px;font-size:var(--t3);line-height:1.4;color:var(--muted)}
+.rcap a{display:inline-block;padding:14px 6px;margin:-14px -6px}
+.route .rth{width:56px;height:56px;border-radius:var(--r);overflow:hidden}
+.route .rth img{width:100%;height:100%;object-fit:cover}
+.route .now .rd{color:var(--fg)}
+.route .now b::before{content:"";display:inline-block;width:9px;height:9px;margin-right:8px;border-radius:50%;background:var(--accent);vertical-align:1px}
+.prices{margin-top:24px}
+.prices h3,.pricesd .pt{font-family:var(--f-disp);font-weight:500;font-size:var(--t2)}
+.stairs{margin-top:10px}
+.st{display:grid;grid-template-columns:72px minmax(0,1fr);gap:12px;padding:10px 0 8px;border-top:1px solid var(--line)}
+.st-h b{font-weight:400;white-space:nowrap;font-variant-numeric:tabular-nums}
+.st-h small{font-size:var(--t3);color:var(--muted)}
+.st-bar{display:block;height:4px;margin-top:6px;border-radius:2px;background:var(--line-2)}
+.st-w{font-size:var(--t3);color:var(--muted)}
+.st-b li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:2px 0}
+.st-b li small{display:block;font-size:var(--t3);color:var(--muted)}
+.st-b .num,.st-b .free{white-space:nowrap}
+.unit,.note{margin-top:8px;font-size:var(--t3);color:var(--muted)}
+.pricesd{margin-top:28px;border-top:1px solid var(--line)}
+.pricesd>summary{flex-wrap:wrap;padding:8px 0}
+.pricesd .pt{flex:1 1 auto}
+.pricesd .pone{flex:1 0 100%;order:3;font-size:var(--t3);color:var(--muted)}
+
+/* ---------- 4. дальше ---------- */
+.q{margin-top:20px;display:flex;flex-direction:column;gap:6px}
+.chauri{display:flex;align-items:center;gap:8px;font-size:var(--t3);color:var(--muted)}
+.yak{width:30px;height:22px;fill:var(--yak);flex:0 0 30px}
+.qq{font-family:var(--f-disp);font-weight:500;line-height:1.35}
+.tag{font-size:var(--t3);color:var(--muted)}
+.tag svg{display:none}
+.alllink{margin-top:6px}
+
+/* ---------- 5. на что собираем ---------- */
+.ask{margin-top:16px}
+/* верх секции сбора: одна строка «сколько и на что» → шкала → кнопка → ступени → что даёт перевод → подробности */
+.sumline{margin-top:14px;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 10px}
+.sumbig{font:500 var(--tsum)/1.1 var(--f-disp);font-variant-numeric:tabular-nums;white-space:nowrap}
+.sumwhat{flex:1 1 14em}
+.sumwhy{margin-top:6px}
+.ladder .meter{margin-top:6px}
+.ladder .rungs{margin-top:16px}
+.ladder .hints{margin-top:28px}
+.ladder .ask{margin-top:28px}
+.meter{margin-top:16px}
+.goal{font-family:var(--f-disp);font-weight:500;font-variant-numeric:tabular-nums}
+.gotn{font-size:var(--t3);color:var(--muted);margin-top:2px}
+.scale{display:flex;gap:4px;margin:14px 0 4px}
+.sg{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1 1 0}
+.sgl{text-align:right;font-size:var(--t3);line-height:1;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.sgb{position:relative;display:block;height:6px;margin-block:1px;border-radius:3px;background:var(--line)}
+.sg.nx .sgb{height:8px;margin-block:0;background:var(--line-2)}
+.sgb>i:first-child{display:block;height:100%;border-radius:3px;background:var(--fg)}
+.sgb .mk{position:absolute;top:-5px;bottom:-5px;width:2px;margin-left:-1px;background:var(--muted)}
+.sg.nx .sgl,.sg.ok .sgl{color:var(--fg)}
+.sgn{font-size:var(--t3);line-height:1.3;color:var(--fg);overflow-wrap:break-word}
+.mkl{margin-top:6px;font-size:var(--t3);line-height:1.3;color:var(--muted);font-variant-numeric:tabular-nums}
+.mkl span{display:inline-block;margin-left:-1px;padding-left:10px;border-left:2px solid var(--line-2)}
+.meter .left{margin-top:8px;font-variant-numeric:tabular-nums}
+.why{margin-top:10px;font-size:var(--t3);color:var(--muted)}
+.ownline{margin-top:20px;font-size:var(--t3);color:var(--muted)}
+.ownline svg{display:none}
+.rungs{margin-top:28px;scroll-margin-top:16px}
+.rung1{display:flex;flex-direction:column;gap:6px}
+.rhead{font-size:var(--t3);color:var(--muted)}
+.rhead b{font-weight:400}
+.rdesc{line-height:1.5}
+.rsum{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px 12px}
+.rsum b{font-family:var(--f-disp);font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rsum span{font-size:var(--t3);color:var(--muted)}
+.comp{border-top:1px solid var(--line);margin-top:6px}
+.comp-b{display:flex;flex-direction:column;gap:6px;padding:0 0 10px}
+.comp-b p,.mb p{line-height:1.5}
+.comp-b .msh,.mb .msh,.mb .est{font-size:var(--t3);color:var(--muted)}
+.clist{display:flex;flex-direction:column;gap:4px;font-size:var(--t3);color:var(--muted)}
+.clist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline}
+.clist li .num{text-align:right}
+.clist li.zp,.clist li.kurs{display:block}
+.clist li.tot{color:var(--fg);border-top:1px solid var(--line);padding-top:4px;margin-top:2px}
+.srows,.more{margin-top:20px}
+.srow,.mrow{border-top:1px solid var(--line)}
+.srows .srow:last-child,.more .mrow:last-child{border-bottom:1px solid var(--line)}
+.srow>summary,.mrow>summary{display:grid;grid-template-columns:minmax(0,1fr) auto 16px;gap:2px 12px;align-items:center;padding:10px 0;min-height:56px}
+/* ступени: четыре строки «сумма — что это», подробности по нажатию */
+.srows .srow>summary{grid-template-columns:5.6em minmax(0,1fr) 16px;align-items:baseline;min-height:48px}
+.srows .srow>summary::after{align-self:center}
+.srows .srow .ss{grid-column:1;text-align:left}
+.srows .srow .st1{grid-column:2}
+.srow>summary::after,.mrow>summary::after{grid-column:3;grid-row:1;margin:0 4px 0 0;align-self:center}
+.srow .st1,.mrow .mt{min-width:0}
+.srow .ss,.mrow .ms{font-family:var(--f-disp);font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.srow .so{grid-column:1/-1;font-size:var(--t3);color:var(--muted)}
+.srow[open] .so{display:none}
+.okm svg{width:14px;height:14px;fill:none;stroke:var(--fg);stroke-width:3;display:inline-block;margin-right:6px;vertical-align:-1px}
+.mb{display:flex;flex-direction:column;gap:6px;padding:0 0 12px}
+.tot1{font-size:var(--t3);color:var(--muted);font-variant-numeric:tabular-nums}
+.fallback{margin-top:16px;font-size:var(--t3);color:var(--muted)}
+.more h3{font-family:var(--f-disp);margin-bottom:4px}
+.more .note{margin:0 0 6px}
+
+/* ---------- 6. поддержать: тёмный фон, без скруглений ---------- */
+.give{background:var(--give);color:var(--chalk)}
+.give .lead,.give .under,.give .sm{color:var(--chalk-soft)}
+.give a:not(.btn),.give .lnk{color:var(--give-link)}
+.give details>summary::after{border-color:var(--give-link)}
+.pline{margin-top:16px}
+.under{margin-top:12px;font-size:var(--t3)}
+.btn.off{display:none}
+.soon{margin-top:16px}
+.hints{margin-top:32px}
+.hints h3{font-family:var(--f-disp)}
+.hints dl{margin-top:4px}
+.hrow{display:grid;grid-template-columns:minmax(88px,auto) minmax(0,1fr);gap:14px;align-items:baseline;padding:4px 0;color:inherit;text-decoration:none}   /* обычный список: без линеек и шевронов */
+.hints dt{font-family:var(--f-disp);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
+.hints dd{color:var(--muted)}
+.give .hints dd{color:var(--chalk-soft)}
+.share{margin-top:32px}
+.sok{font-size:var(--t3);color:var(--chalk-soft)}
+.surl{display:block;width:100%;margin-top:10px;padding:10px;border-radius:var(--r);border:1px solid var(--chalk-soft);background:var(--give);color:var(--chalk);font:var(--t3) var(--f-body)}
+.alt{margin-top:12px;border-top:1px solid var(--give-2);border-bottom:1px solid var(--give-2)}
+.alt>summary{color:var(--chalk)}
+.alt-i{padding:6px 0 12px}
+.alt-i+.alt-i{border-top:1px solid var(--give-2);padding-top:12px}
+.alt-i h3{font-family:var(--f-disp)}
+.alt-i .act{margin-top:8px}
+.share .act{margin-top:10px}
+.alt-v{display:block;margin-top:4px;word-break:break-all;font-variant-numeric:tabular-nums}
+.alt-n{display:block;margin-top:4px;font-size:var(--t3);color:var(--chalk-soft)}
+.alt .ok{font-size:var(--t3);color:var(--chalk-soft);margin-left:8px}
+
+/* ---------- 7. потом ---------- */
+.later .news{margin-top:16px}
+.later h3{margin-top:32px;font-family:var(--f-disp)}
+.later .endgive h3{margin-top:0}   /* блок «Поддержать» в конце: заголовки без отступа раздела «потом» */
+.later .endgive .alt-i h3{margin-top:6px}
+.cook{margin-top:8px;display:flex;flex-direction:column;gap:4px}
+.shelf{margin-top:4px}
+.shelf li{display:flex;flex-direction:column}
+.shelf .sm{margin-top:-6px}
+.foot{margin-top:32px;font-size:var(--t3);color:var(--muted)}
+/* F9. что мы отдаём: строки-ссылки, без рамок и плашек */
+.gshelf{margin-top:12px;display:flex;flex-direction:column;gap:10px}
+.gshelf li{display:flex;flex-direction:column}
+.gshelf .sm{margin-top:-8px}
+
+.lic{margin-top:4px;font-size:var(--t3);color:var(--muted)}
+
+/* ---------- v13 (д-свои): лёгкая страница. Без вертикального snap, без раскрытий, без якорей кроме «листайте ↓» ---------- */
+.cover.v13 .low{padding-bottom:10px}
+.next13{display:flex;justify-content:flex-end;margin:6px 0 14px}
+.next13 .nextq{position:static}
+.past.v13 .slot{aspect-ratio:4/3;flex:1 0 auto}   /* 4:3, лишнюю высоту короткой карточки забирает фото — без пустого поля внизу */
+.past.v13 .slot.mp{order:0;aspect-ratio:4/3;min-height:0}
+.past.v13 .dtext{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.thumbs.hid{display:none}
+.list13{margin-top:14px;display:flex;flex-direction:column;gap:12px}
+.list13 li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:center}
+.th13{display:block;width:72px;height:72px;border-radius:var(--r);overflow:hidden;background:var(--ph)}
+.th13 img{width:100%;height:100%;object-fit:cover}
+.tx13{display:flex;flex-direction:column;gap:2px}
+.cr13{margin-top:12px}
+.cr13 a{color:inherit}
+.lead13{margin-top:6px}
+.money13 .sumline{margin-top:4px}
+.bar13{display:flex;gap:3px;margin:10px 0 4px}
+.bar13>i{display:block;height:8px;border-radius:3px;background:var(--line);min-width:6px}
+.bar13>i>i{display:block;height:100%;border-radius:3px;background:var(--fg)}
+.steps13{margin-top:12px;border-top:1px solid var(--line)}
+.steps13 li{display:grid;grid-template-columns:5.6em minmax(0,1fr);gap:12px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--line)}
+.steps13 b{font-family:var(--f-disp);font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bonus13{margin-top:10px}   /* v18: под кнопкой, чтобы сделка до кнопки помещалась и на 360×740 */
+.soon13{margin-top:8px}
+.share13 .gshelf{margin-top:10px}
+.alt13{margin-top:16px;border:0}
+.alt13 .alt-i{padding:4px 0 0}
+.alt13 .alt-n,.give13 .ok{color:var(--muted)}
+/* v13.1 */
+.past.v13 .dbody{padding-top:16px}
+.past.v13 .dmeta{color:var(--fg)}                 /* служебная строка: тот же 13 px, контраст выше */
+.dmeta .new{font-weight:400;color:var(--here)}    /* «новое» — цветом маркера */
+.promise13{margin-top:12px}
+.got13{margin-top:2px}
+.bar13.one{margin:10px 0 0}
+.under13{margin-top:12px}
+.alt13s{margin-top:6px}
+.cp13{display:inline;min-height:0;padding:14px 6px;margin:-14px -6px;font-size:inherit}   /* зона нажатия ≥ 44 px без разрыва строки */
+.give13 .share{margin-top:0}
+.give13 .cr13{margin-top:6px}
+.give13 .cr13 a{text-decoration:none}
+/* v14: строки шагов с тихой строкой «что даст»; второй ярус — без крупных цифр, сумма справа обычным текстом */
+.steps13 li>span{display:flex;flex-direction:column;gap:1px;min-width:0}
+.more14{margin-top:24px}
+.more14 h3{font-family:var(--f-disp)}
+.steps13.t2{margin-top:6px}
+.steps13.t2 li{grid-template-columns:minmax(0,1fr) auto}
+.s14{font-variant-numeric:tabular-nums;white-space:nowrap}
+.past.v13 .car.list{padding-bottom:0}
+.past.v13 .car.list .dbody{padding-bottom:12px}   /* v16, а-вход: дни списком без лишней пустоты перед «Что дальше» */
+.p14{margin-top:20px}   /* v16: второй ярус — абзац рассказа */
+.cr13{opacity:.85}
+.brand13,.brandf{font:700 1.3125rem/1.1 "Amatic SC","Jost Fallback",sans-serif;letter-spacing:.03em}   /* v15: знак «Исследуем × Непал» шрифтом сайта Алины — единственное место Amatic */
+.brand13{color:rgba(255,255,255,.92);margin-bottom:4px}
+.brandf{color:var(--fg)}
+/* v17: карта маршрута по высоте внизу обложки — линия растягивается по ширине, маркер и подписи стоят по тем же координатам */
+.cprof{position:relative;margin:10px 0 14px;text-shadow:none}
+.cp-line{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.cp-done{fill:none;stroke:#FEFBE3;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.cp-todo{fill:none;stroke:rgba(254,251,227,.7);stroke-width:1.4;stroke-dasharray:3 4;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.cp-dot{position:absolute;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:#E3A548;box-shadow:0 0 0 3px rgba(227,165,72,.35),0 0 0 1.5px #0D1613 inset}
+.cp-pt{position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:#FEFBE3}
+.cp-l{position:absolute;white-space:nowrap;font-size:var(--t3);line-height:1.3;color:rgba(255,255,255,.9);text-shadow:0 1px 3px rgba(0,0,0,.7)}
+.cp-now{font-family:var(--f-disp);font-weight:500;color:#fff}
+/* v18: «Чем мы делимся» — кнопки во всю ширину (нажимаемое: тонкая рамка, поверхность карточки, радиус 6 px, без подчёркиваний) */
+.shbs{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.shb{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:9px 14px;border:1px solid var(--line-2);border-radius:var(--r);background:var(--surface);color:var(--fg);text-decoration:none}
+.shb-t{display:flex;flex-direction:column;gap:1px;min-width:0}
+.shb svg{width:16px;height:16px;flex:0 0 16px;fill:none;stroke:var(--link);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.shb:active{background:var(--ph)}
+.share13 .soon13{margin-top:10px}
+/* v18: мечта о камерах — без карточки, тонкая линия сверху, миниатюра слева */
+.cams14{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px;align-items:start}
+.cams14.noph{grid-template-columns:minmax(0,1fr)}
+.cam-th{display:block;width:56px;height:56px;border-radius:var(--r);overflow:hidden}
+.cam-th img{width:100%;height:100%;object-fit:cover}
+.cam-h{margin-bottom:2px}
+
+/* ---------- просмотрщик фото ---------- */
+.lbon,.lbon body{overflow:hidden}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(13,22,19,.985);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#EEF1EE;display:flex;align-items:center;justify-content:center;overscroll-behavior:contain;touch-action:pinch-zoom;outline:0;
+  padding:calc(56px + env(safe-area-inset-top,0px)) env(safe-area-inset-right,0px) calc(16px + env(safe-area-inset-bottom,0px)) env(safe-area-inset-left,0px)}
+.lb[hidden]{display:none}
+.lb-f{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;max-height:100%}
+.lb-w{position:relative;width:100%;display:flex;justify-content:center}
+.lb-f img{width:100%;max-height:80vh;max-height:80svh;height:auto;object-fit:contain;background:#15241F}
+.lb-f figcaption{font-size:var(--t3);line-height:1.4;color:#D5DDDE;text-align:center;max-width:40ch;padding:0 16px}
+.lb-c{text-align:center;font-size:var(--t3);font-variant-numeric:tabular-nums;color:#A9B6B9}
+.lb-b{position:absolute;width:48px;height:48px;border-radius:var(--r);border:0;background:rgba(5,8,11,.55);color:#EEF1EE;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.lb-b:focus-visible{outline:2px solid #EEF1EE;outline-offset:2px}
+.lb-b svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.lb-x{top:calc(6px + env(safe-area-inset-top,0px));right:max(6px,env(safe-area-inset-right,0px));background:rgba(255,255,255,.12)}
+.lb-p,.lb-n{top:50%;margin-top:-24px}
+.lb-p{left:max(6px,env(safe-area-inset-left,0px))}.lb-n{right:max(6px,env(safe-area-inset-right,0px))}
+.lb.one .lb-p,.lb.one .lb-n,.lb.one .lb-c{display:none}
+.lz:not([src]){visibility:hidden}
+</style>
+<style>html{scroll-snap-type:none}.scr,.cover{scroll-snap-align:none}</style>
+</head>
+<body>
+<noscript><style>.lbo,.thumbs,.ccount,.phcap,.gal,.finds,.sbtn,.lb,.pin,.rth,[data-copy]{display:none!important}.car{height:auto!important}.car .day{opacity:1!important}</style></noscript>
+<main>
+<section class="cover v13 hasph" id="обложка" data-bar data-dark>
+<div class="cover-ph"><img style="object-position:28% 50%" src="photo/oblozhka.jpg" fetchpriority="high" width="1080" height="1350" alt="По дороге к Бадал-Данде"></div>
+<div class="in low">
+ <p class="brand13">Исследуем × Непал</p>
+ <p class="by">Алина и Дима в Гималаях · 27 ноября</p>
+ <h1>Непал, Гималаи</h1>
+ <p class="meta">день 6 на тропе</p>
+ 
+ 
+ <div class="cprof" style="height:96px" role="img" aria-label="старт, 1 770 м · мы здесь · 3 250 м · верхний лагерь, 3 550 м"><svg class="cp-line" viewBox="0 0 1000 96" preserveAspectRatio="none" aria-hidden="true"><path d="M513.9,39.0 L515.5,38.9 L524.1,38.2 L524.9,38.1 L525.8,38.0 L528.9,37.8 L530.1,37.7 L532.5,37.5 L535.7,37.2 L536.8,37.1 L541.2,36.7 L543.4,36.6 L548.7,36.1 L551.7,35.9 L554.0,35.7 L554.9,35.6 L556.1,35.5 L560.0,35.2 L561.4,35.1 L566.2,34.7 L566.5,34.6 L571.9,34.2 L576.1,33.8 L578.7,33.6 L579.0,33.6 L580.8,33.5 L584.8,33.1 L588.0,32.9 L588.6,32.8 L589.1,32.8 L603.0,32.0 L617.0,31.2 L630.9,30.4 L644.9,29.6 L658.8,28.9 L672.8,28.1 L686.7,27.3 L700.7,28.1 L714.6,28.9 L728.6,29.6 L742.5,30.4 L756.5,31.2 L770.4,32.0 L784.4,32.8 L784.9,32.8 L785.5,32.9 L788.7,33.1 L792.7,33.5 L794.5,33.6 L794.7,33.6 L797.3,33.8 L801.5,34.2 L807.0,34.6 L807.3,34.7 L812.1,35.1 L813.5,35.2 L817.4,35.5 L818.6,35.6 L819.5,35.7 L821.8,35.9 L824.8,36.1 L830.0,36.6 L832.2,36.7 L836.6,37.1 L837.8,37.2 L841.0,37.5 L843.4,37.7 L844.6,37.8 L847.6,38.0 L848.5,38.1 L849.3,38.2 L858.0,38.9 L859.6,39.0 L861.1,39.1 L861.9,39.2 L862.6,39.3 L866.6,39.8 L872.1,40.3 L874.6,40.4 L877.9,40.6 L878.9,40.8 L882.0,41.4 L886.5,42.1 L887.2,42.2 L887.7,42.2 L888.7,42.3 L889.2,42.4 L890.0,42.4 L892.1,42.5 L894.4,42.8 L895.5,43.0 L900.6,44.0 L902.7,44.4 L903.2,44.5 L903.7,44.5 L905.7,44.7 L907.2,44.8 L910.7,45.0 L918.3,46.0 L921.1,46.4 L923.5,46.7 L927.4,47.2 L930.6,48.0 L932.5,48.5 L934.6,48.9 L935.1,49.0 L936.0,49.1 L939.7,49.7 L940.7,49.9 L942.6,50.2 L943.9,50.4 L944.6,50.5 L947.3,51.1 L948.3,51.2 L949.6,51.4 L951.5,51.5 L955.0,51.7 L956.1,51.7 L959.2,52.0 L963.2,53.0 L963.9,53.1 L967.2,53.6 L967.8,53.8 L968.4,53.9 L968.9,54.0 L969.7,54.1 L970.4,54.1 L971.3,54.2 L973.1,54.2 L974.1,54.2 L974.9,54.2 L975.7,54.1 L976.2,54.2 L977.7,54.5 L979.0,54.8 L979.8,55.0 L984.8,55.4 L986.0,55.5 L989.7,55.7 L990.7,55.8 L993.6,56.0 L996.8,56.5 L997.5,56.6 L998.8,56.7 L999.2,56.7 L999.8,56.8 L1000.0,56.8" class="cp-todo"/><path d="M0.0,72.5 L3.2,72.5 L4.4,72.5 L5.5,72.5 L6.0,72.5 L8.3,72.6 L8.9,72.6 L9.3,72.7 L9.9,72.7 L10.5,72.7 L12.3,72.7 L12.9,72.7 L13.4,72.7 L13.8,72.6 L14.8,72.5 L15.7,72.4 L16.3,72.3 L23.9,71.6 L24.7,71.6 L25.2,71.6 L25.6,71.5 L26.0,71.5 L27.0,71.3 L27.7,71.2 L32.1,70.3 L32.5,70.3 L32.9,70.2 L33.9,70.1 L36.2,69.6 L37.2,69.4 L41.9,68.0 L45.4,67.5 L46.1,67.4 L46.7,67.2 L47.6,67.0 L48.7,66.7 L51.2,66.5 L52.3,66.5 L56.8,66.1 L59.1,66.0 L62.5,65.6 L63.2,65.5 L63.4,65.4 L64.0,65.4 L64.6,65.3 L65.2,65.3 L65.9,65.3 L69.6,65.6 L74.3,66.0 L74.8,66.0 L75.3,66.1 L75.7,66.1 L77.3,66.2 L77.8,66.2 L82.1,66.5 L82.3,66.5 L82.9,66.5 L83.3,66.5 L83.6,66.5 L83.8,66.6 L87.9,66.7 L88.2,66.7 L88.5,66.7 L89.1,66.7 L90.7,66.7 L91.9,66.8 L93.0,66.8 L93.8,66.8 L94.6,66.9 L98.8,67.2 L102.1,67.4 L102.5,67.4 L103.0,67.4 L103.5,67.4 L112.3,66.9 L112.7,66.9 L113.6,66.8 L114.0,66.7 L114.6,66.7 L115.0,66.6 L117.9,66.5 L118.4,66.5 L118.9,66.5 L124.8,66.5 L125.5,66.5 L126.2,66.5 L127.0,66.5 L127.5,66.5 L128.2,66.5 L129.0,66.4 L129.9,66.4 L130.6,66.4 L134.5,66.2 L135.2,66.2 L136.1,66.2 L136.7,66.2 L137.6,66.2 L138.2,66.1 L142.4,66.1 L146.0,65.8 L147.9,65.6 L148.9,65.5 L150.1,65.3 L150.9,65.2 L151.9,65.1 L152.5,65.1 L153.1,65.0 L153.4,65.0 L153.7,65.0 L154.5,65.0 L154.7,64.9 L155.2,64.9 L160.0,64.4 L160.7,64.3 L161.9,64.1 L172.9,63.0 L177.8,63.4 L182.3,63.5 L183.1,63.5 L183.9,63.5 L184.2,63.5 L186.1,63.6 L186.7,63.6 L187.4,63.6 L190.4,63.6 L190.7,63.6 L191.7,63.6 L196.9,63.4 L198.3,63.4 L199.4,63.3 L202.2,63.3 L204.5,63.2 L207.9,63.1 L210.8,62.8 L214.6,62.3 L216.9,61.8 L220.9,61.0 L221.7,60.8 L222.5,60.6 L223.0,60.5 L223.7,60.3 L224.5,60.2 L225.0,60.1 L229.1,59.4 L231.3,58.7 L231.7,58.6 L232.3,58.4 L234.9,57.6 L235.7,57.5 L239.7,57.2 L244.5,57.3 L245.8,57.2 L246.4,57.1 L247.5,57.0 L250.6,56.7 L253.4,56.5 L254.1,56.5 L254.8,56.4 L259.1,56.5 L264.1,56.5 L268.0,56.6 L273.5,56.6 L276.5,56.5 L277.6,56.5 L278.1,56.4 L278.9,56.4 L280.1,56.3 L281.1,56.2 L283.0,56.0 L283.6,55.9 L284.1,55.8 L284.6,55.8 L285.4,55.7 L288.8,56.0 L290.0,56.1 L290.6,56.2 L291.2,56.3 L292.9,56.5 L294.5,56.6 L296.7,56.9 L298.5,57.2 L301.0,57.6 L304.1,57.9 L305.4,58.0 L307.0,58.0 L309.3,57.9 L310.6,57.9 L311.1,57.9 L312.1,57.8 L313.4,57.6 L314.7,57.4 L316.2,57.3 L318.6,56.9 L320.2,56.5 L323.1,56.0 L325.7,55.5 L327.0,55.2 L331.4,54.8 L333.5,54.7 L336.1,54.7 L337.4,54.7 L343.3,55.0 L351.3,55.4 L354.5,55.4 L358.6,55.6 L361.1,55.7 L364.8,56.1 L368.7,56.7 L371.1,56.8 L373.2,56.9 L373.5,56.8 L374.2,56.8 L374.6,56.8 L375.9,56.7 L376.6,56.6 L379.7,56.2 L382.7,55.9 L383.7,55.8 L387.4,55.6 L388.6,55.5 L393.6,55.3 L394.3,55.3 L395.6,55.1 L397.1,54.7 L397.6,54.6 L398.5,54.4 L399.2,54.2 L400.2,54.1 L402.1,54.2 L402.9,54.2 L403.6,54.3 L404.4,54.3 L404.9,54.2 L405.5,54.2 L406.2,54.1 L409.5,53.6 L410.2,53.5 L414.2,52.8 L417.2,52.0 L418.3,51.9 L421.9,51.7 L423.7,51.6 L425.1,51.5 L426.0,51.5 L428.8,51.3 L429.5,51.1 L430.8,50.9 L432.6,50.6 L433.7,50.4 L437.3,49.8 L438.2,49.7 L438.8,49.6 L440.8,49.3 L442.7,48.9 L445.9,48.4 L449.8,47.4 L452.2,47.1 L455.1,46.7 L462.6,45.6 L466.1,45.1 L467.7,45.0 L468.8,45.0 L469.5,44.9 L470.0,44.9 L470.4,44.9 L471.1,44.8 L472.9,44.7 L478.0,43.7 L479.1,43.5 L481.4,43.0 L483.5,42.7 L484.3,42.6 L484.8,42.5 L485.8,42.5 L486.2,42.4 L487.0,42.4 L491.5,41.9 L494.6,41.2 L495.5,41.0 L498.8,40.5 L501.4,40.3 L506.9,39.9 L510.9,39.3 L511.6,39.2 L512.3,39.2 L513.9,39.0 L513.9,39.0" class="cp-done"/></svg><i class="cp-dot" style="left:51.39%;top:39.0px"></i><span class="cp-l cp-start" style="left:0.00%;top:76.5px">старт, 1 770 м</span><span class="cp-l cp-now" style="right:calc(48.61% + 9px);top:17.0px">мы здесь · 3 250 м</span><i class="cp-pt" style="left:58.91%;top:32.8px"></i><span class="cp-l cp-hi" style="left:calc(58.91% - 6px);top:6.8px">верхний лагерь, 3 550 м</span></div>
+</div>
+</section>
+<section class="scr past v13" id="прошли" data-bar>
+<div class="in"><div class="hrowt"><h2>Уже прошли</h2><p class="ccount" aria-hidden="true"><span>листайте вбок · </span><span id="ccount">1 / 6</span> <svg class="carr" viewBox="0 0 16 10" aria-hidden="true"><path d="M1 5h13M10 1l4 4-4 4"/></svg></p></div>
+<p class="lead">День идём, день сидим в классном лагере. Вышли 22 ноября из Покхары, города у озера.</p></div>
+<div class="car" id="car" tabindex="0" aria-label="Дни, сначала сегодняшний"><article class="day cur" aria-label="27 ноября · день 6"><button class="lbo slot ph" type="button" data-g="d0" data-full="photo/2026-11-26_02.jpg" data-cap="Кадр вчерашнего вечера. Сегодняшние дошлём." aria-label="Открыть фото: Кадр вчерашнего вечера. Сегодняшние дошлём."><img class="lz" data-src="photo/2026-11-26_02.jpg" loading="lazy" decoding="async" width="1600" height="1200" alt="Кадр вчерашнего вечера. Сегодняшние дошлём."></button><div class="dbody"><p class="dmeta">27 ноября · день 6 · Бадал-Данда, 3 250 м · <b class=new>новое</b></p><h3>Лучший вид здесь</h3><p class="dtext">Попутчик, который спустился сверху, сказал, что лучший вид здесь. Остались. Алина: «Живём на облачке, из окна видно облачки».</p></div></article><article class="day" aria-label="26 ноября · день 5"><button class="lbo slot ph" type="button" data-g="d1" data-full="photo/2026-11-26_01.jpg" data-cap="По дороге к Бадал-Данде" aria-label="Открыть фото: По дороге к Бадал-Данде"><img class="lz" data-src="photo/2026-11-26_01.jpg" loading="lazy" decoding="async" width="1600" height="901" alt="По дороге к Бадал-Данде, кадр 2"></button><div class="dbody"><p class="dmeta">26 ноября · день 5 · Бадал-Данда, 3 250 м</p><h3>Из облака на гребень</h3><p class="dtext">Шли вверх в облаке, к вечеру вышли на гребень, и под нами было море облаков. В лодже бильярд и блюз, Димина любимая музыка.</p><div class="thumbs hid"><button class="lbo th" type="button" hidden data-g="d1" data-full="photo/2026-11-26_02.jpg" data-w="1600" data-h="1200" data-cap="Вечер под гребнем, Бадал-Данда" data-alt="Вечер под гребнем, Бадал-Данда" aria-label="Открыть фото"></button></div></div></article><article class="day" aria-label="25 ноября · день 4"><button class="lbo slot ph tall" type="button" data-g="d2" data-full="photo/2026-11-25_01.jpg" data-cap="Каменные ступени в мшистом лесу" aria-label="Открыть фото: Каменные ступени в мшистом лесу"><img class="lz" data-src="photo/2026-11-25_01.jpg" loading="lazy" decoding="async" width="828" height="1472" alt="Каменные ступени в мшистом лесу"></button><div class="dbody"><p class="dmeta">25 ноября · день 4 · лагерь в лесу, 2 440 м</p><h3>Выше, в лес</h3><p class="dtext">Поднялись в маленький тихий лагерь в лесу, на закате снимали бамбук. Комната на двоих 1 500 рупий, ≈ 850 ₽.</p><div class="thumbs hid"><button class="lbo th" type="button" hidden data-g="d2" data-full="photo/2026-11-25_02.jpg" data-w="860" data-h="1146" data-cap="Лес во мху между Форест-кэмпом и Лоу-кэмпом" data-alt="Лес во мху между Форест-кэмпом и Лоу-кэмпом" aria-label="Открыть фото"></button><button class="lbo th" type="button" hidden data-g="d2" data-full="photo/2026-11-25_04.jpg" data-w="1600" data-h="900" data-cap="Бамбук на закате у Рест-кэмпа" data-alt="Бамбук на закате у Рест-кэмпа" aria-label="Открыть фото"></button></div></div></article><article class="day" aria-label="24 ноября · день 3"><button class="lbo slot ph" type="button" data-g="d3" data-full="photo/2026-11-24_01.jpg" data-cap="Рассвет над облаками, Австралийский лагерь" aria-label="Открыть фото: Рассвет над облаками, Австралийский лагерь"><img class="lz" data-src="photo/2026-11-24_01.jpg" loading="lazy" decoding="async" width="1600" height="1200" alt="Рассвет над облаками, Австралийский лагерь"></button><div class="dbody"><p class="dmeta">24 ноября · день 3 · лагерь на поляне, 2 060 м</p><h3>Придумали ритм</h3><p class="dtext">Вечером Дима надиктовал идею: «Один день ходьбы, один день сидеть в классном лагере». Отсюда и наш ритм.</p></div></article><article class="day" aria-label="22 ноября · день 1"><button class="lbo slot ph" type="button" data-g="d4" data-full="photo/2026-11-22_01.jpg" data-cap="Палатки Австралийского лагеря на закате" aria-label="Открыть фото: Палатки Австралийского лагеря на закате"><img class="lz" data-src="photo/2026-11-22_01.jpg" loading="lazy" decoding="async" width="1600" height="1200" alt="Палатки Австралийского лагеря на закате"></button><div class="dbody"><p class="dmeta">22 ноября · день 1 · лагерь на поляне, 2 060 м</p><h3>Вышли на тропу</h3><p class="dtext">Такси из Покхары до Канде 2 000 рупий, дальше час-полтора пешком вверх. Рюкзаки помогает нести носильщик.</p></div></article><article class="day pre" aria-label="До тропы"><button class="lbo slot ph" type="button" data-g="pre" data-full="photo/galereya_03.jpg" data-cap="Молитвенные флажки на закате" aria-label="Открыть фото: Молитвенные флажки на закате"><img class="lz" data-src="photo/galereya_03.jpg" loading="lazy" decoding="async" width="1600" height="900" alt="Молитвенные флажки на закате"></button><div class="dbody"><p class="dmeta">19–21 ноября · Покхара, город у озера, 830 м</p><h3>До тропы</h3><ul class="prelist"><li><span class="pd">19 ноября</span>Автобусом в Покхару</li><li><span class="pd">20 ноября</span>Разрешения на трек и еда в дорогу</li><li><span class="pd">21 ноября</span>Лодка по озеру, тёплые вещи, носильщик</li></ul><div class="thumbs hid"><button class="lbo th" type="button" hidden data-g="pre" data-full="photo/galereya_04.jpg" data-w="1600" data-h="900" data-cap="Молитвенные флажки на закате" data-alt="Молитвенные флажки на закате, кадр 2" aria-label="Открыть фото"></button><button class="lbo th" type="button" hidden data-g="pre" data-full="photo/galereya_05.jpg" data-w="900" data-h="1600" data-cap="Катманду в огнях, до выхода на тропу" data-alt="Катманду в огнях, до выхода на тропу" aria-label="Открыть фото"></button><button class="lbo th" type="button" hidden data-g="pre" data-full="photo/galereya_06.jpg" data-w="1600" data-h="900" data-cap="Катманду в огнях, до выхода на тропу" data-alt="Катманду в огнях, до выхода на тропу, кадр 2" aria-label="Открыть фото"></button><button class="lbo th" type="button" hidden data-g="pre" data-full="photo/galereya_07.jpg" data-w="900" data-h="1600" data-cap="В монастыре" data-alt="В монастыре" aria-label="Открыть фото"></button></div></div></article></div>
+</section>
+<section class="scr ahead13" id="впереди" data-bar>
+<div class="in"><h2>Что дальше</h2>
+<ul class="list13"><li><span class="th13"><img class="lz" data-src="photo/mesta/mini/high-camp.jpg" loading="lazy" decoding="async" width="1200" height="800" alt="налегке к видовой точке, а может, и выше"></span><span class="tx13"><span class="sm">28 ноября</span><span>налегке к видовой точке, а может, и выше</span></span></li><li><span class="th13"><img class="lz" data-src="photo/mesta/mini/viewpoint.jpg" loading="lazy" decoding="async" width="1200" height="900" alt="план: затемно к рассвету над горами"></span><span class="tx13"><span class="sm">29 ноября</span><span>план: затемно к рассвету над горами</span></span></li><li><span class="th13"><img class="lz" data-src="photo/mesta/mini/low-camp.jpg" loading="lazy" decoding="async" width="1104" height="828" alt="спускаемся в тот тихий лагерь в лесу"></span><span class="tx13"><span class="sm">1 декабря</span><span>спускаемся в тот тихий лагерь в лесу</span></span></li><li><span class="th13"><img class="lz" data-src="photo/mesta/mini/jhinu.jpg" loading="lazy" decoding="async" width="1200" height="776" alt="ночь у горячих источников"></span><span class="tx13"><span class="sm">если соберём</span><span>ночь у горячих источников</span></span></li></ul>
+<p class="sm promise13">Пишем каждый вечер, когда ловит связь.</p>
+</div></section>
+<section class="scr share13" id="делимся" data-bar>
+<div class="in"><h2>Чем мы делимся</h2>
+<div class="shbs"><a class="shb" href="https://mrdmitrydouble.github.io/nine-nights/nepal/" target="_blank" rel="noopener"><span class="shb-t"><span>Исследуем × Непал</span><span class="sm">наш сайт: маршруты, природа, подготовка, жизнь в Непале</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a class="shb" href="https://mrdmitrydouble.github.io/nine-nights/" target="_blank" rel="noopener"><span class="shb-t"><span>Маршрут этого похода</span><span class="sm">план, из которого вырос наш трек; по ходу меняем</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a class="shb" href="https://mrdmitrydouble.github.io/nine-nights/nepal/gde-pozhit/" target="_blank" rel="noopener"><span class="shb-t"><span>Где пожить в горах</span><span class="sm">29 тихих мест Непала на месяц-три</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a><a class="shb" href="https://mrdmitrydouble.github.io/nine-nights/nepal/#march" target="_blank" rel="noopener"><span class="shb-t"><span>Весной идём снова</span><span class="sm">март 2027, Кольцо Аннапурны, зовём с собой</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a></div>
+<p class="sm soon13">Скоро: цены с тропы, сказка про яка Чаури, открытые данные для ИИ.</p>
+</div></section>
+<section class="scr money13" id="проект" data-bar>
+<div class="in"><h2>Поддержать проект</h2>
+<p class="lead13">Всё, что узнаём на тропе, выкладываем бесплатно. Если хотите помочь, вот как.</p>
+<a class="btn" href="https://mrdmitrydouble.github.io/nine-nights/nepal/#support" target="_blank" rel="noopener">Поддержать проект<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></section>
+<section class="scr give13" id="конец" data-bar>
+<div class="in">
+<div class="share"><p>Киньте ссылку тем, кому зайдёт.</p>
+<button class="act sbtn" id="share" type="button" data-ok="Ссылка скопирована"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></svg><span>Скопировать ссылку</span></button>
+<p class="sok" id="share-ok" aria-live="polite"></p><input class="vh" id="share-url" type="text" readonly tabindex="-1" aria-hidden="true" value=""></div>
+<p class="foot"><span class="brandf">Исследуем × Непал</span> · Алина и Дима · 27 ноября</p>
+
+<p class="sm cr13">Кадры в «Что дальше»: Викисклад <a class="ext" href="https://commons.wikimedia.org/wiki/File:High_Camp_of_Mardi_Himal_Trek_07.jpg" target="_blank" rel="noopener" title="Aasish Shah, CC BY-SA 4.0" aria-label="Aasish Shah">1</a> <a class="ext" href="https://commons.wikimedia.org/wiki/File:A_musing_morning_at_High_Camp.jpg" target="_blank" rel="noopener" title="Anusandhan Pokhrel, CC BY-SA 4.0" aria-label="Anusandhan Pokhrel">2</a> <a class="ext" href="https://commons.wikimedia.org/wiki/File:Forest_Camp_.._The_way_to_Maardi_Himal.jpg" target="_blank" rel="noopener" title="Binayaksha Sharma, CC BY-SA 4.0" aria-label="Binayaksha Sharma">3</a> <a class="ext" href="https://commons.wikimedia.org/wiki/File:Jhinudanda-10-Schneeruecken-2013-gje.jpg" target="_blank" rel="noopener" title="Gerd Eichmann, CC BY-SA 4.0" aria-label="Gerd Eichmann">4</a></p>
+</div></section>
+</main>
+<div class="lb" id="lb" hidden tabindex="-1" role="dialog" aria-modal="true" aria-label="Фото крупно"><figure class="lb-f"><div class="lb-w"><img id="lb-img" alt=""><button class="lb-b lb-p" type="button" aria-label="Предыдущее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button><button class="lb-b lb-n" type="button" aria-label="Следующее фото"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button></div><figcaption id="lb-cap"></figcaption><p class="lb-c" id="lb-c" aria-live="polite"></p></figure><button class="lb-b lb-x" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+<script>
+(function(){
+  var root=document.documentElement;
+  /* страница по вертикали скроллится нативно: браузер не возвращает прокрутку сам после «назад» из просмотрщика */
+  try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}
+  /* метка «мы здесь» на фото обложки: точка задана в процентах кадра, пересчёт под object-fit:cover и object-position */
+  var pin=document.querySelector('.pin'),cim=document.querySelector('.cover-ph img');
+  function place(){
+    if(!pin||!cim)return;var cw=cim.clientWidth,ch=cim.clientHeight,iw=+cim.getAttribute('width'),ih=+cim.getAttribute('height');if(!cw||!iw)return;
+    var s=Math.max(cw/iw,ch/ih),w=iw*s,h=ih*s,op=(getComputedStyle(cim).objectPosition||'50% 50%').split(' '),
+        ox=(parseFloat(op[0])||50)/100,oy=(parseFloat(op[1]||op[0])||50)/100,
+        x=(cw-w)*ox+w*(+pin.getAttribute('data-x'))/100,y=(ch-h)*oy+h*(+pin.getAttribute('data-y'))/100;
+    pin.style.transform='translate('+Math.round(x)+'px,'+Math.round(y)+'px)';pin.classList.add('on');
+  }
+  place();window.addEventListener('resize',place);if(cim&&!cim.complete)cim.addEventListener('load',place);
+  /* фото, кроме обложки, грузятся, когда входят в окно (до прокрутки — только обложка); главное фото соседней карточки — заранее */
+  var lz=[].slice.call(document.querySelectorAll('img[data-src]'));
+  function ld(im){if(im&&!im.getAttribute('src')&&im.getAttribute('data-src'))im.src=im.getAttribute('data-src')}
+  function ldCard(c){if(c)[].forEach.call(c.querySelectorAll('img[data-src]'),ld)}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){ld(e.target);io.unobserve(e.target);
+      var c=e.target.closest&&e.target.closest('.day');if(c&&c.querySelector('.slot')&&c.querySelector('.slot').contains(e.target)&&window.scrollY>0){ldCard(c.nextElementSibling&&c.nextElementSibling.querySelector('.slot'))}}})},{rootMargin:'0px'});
+    lz.forEach(function(im){io.observe(im)});
+  }else lz.forEach(ld);
+  /* главное фото первой карточки: как только прокрутили 30 % первого экрана, не дожидаясь входа в окно */
+  var first=document.querySelector('#car .day .slot img[data-src]');
+  if(first){var pre=function(){if(window.scrollY>window.innerHeight*0.3){ld(first);window.removeEventListener('scroll',pre)}};window.addEventListener('scroll',pre,{passive:true})}
+  /* карусель: счётчик «1 / 6» */
+  var car=document.getElementById('car');
+  var cur=0;
+  /* v17: текущая карточка — по положению на экране (getBoundingClientRect), а не по offsetLeft: не зависит от обёртки страницы */
+  if(car){car.addEventListener('scroll',function(){
+    var c=car.children,best=0,bd=1e9,cl=car.getBoundingClientRect().left+(parseFloat(getComputedStyle(car).paddingLeft)||16);
+    for(var i=0;i<c.length;i++){var d=Math.abs(c[i].getBoundingClientRect().left-cl);if(d<bd){bd=d;best=i}}
+    var cc=document.getElementById('ccount');if(cc)cc.textContent=(best+1)+' / '+c.length;
+    for(var j=0;j<c.length;j++)c[j].classList.toggle('cur',j===best);
+    cur=best;
+  },{passive:true})}
+  /* просмотрщик фото: тап по фото — крупно; свайп или кнопки — соседние; крестик, Esc, «назад» — закрыть */
+  /* просмотр со вшитыми фото: data-full="#ключ" — копия из img страницы (data-k) или из карты #phmap */
+  var PHM={};try{var pm=document.getElementById('phmap');if(pm)PHM=JSON.parse(pm.textContent)}catch(e){}
+  function full(v){if(!v||v.charAt(0)!=='#')return v;var k=v.slice(1),ims=document.querySelectorAll('img[data-k]');
+    for(var i=0;i<ims.length;i++)if(ims[i].getAttribute('data-k')===k&&ims[i].getAttribute('src'))return ims[i].getAttribute('src');return PHM[k]||''}
+  var lb=document.getElementById('lb');
+  if(lb){
+    var li=document.getElementById('lb-img'),lc=document.getElementById('lb-cap'),ln=document.getElementById('lb-c'),
+        bx=lb.querySelector('.lb-x'),bp=lb.querySelector('.lb-p'),bn=lb.querySelector('.lb-n'),list=[],k=0,from=null,pushed=false;
+    function show(){
+      var o=list[k],im=o.querySelector('img');
+      li.removeAttribute('src');li.width=+(im?im.getAttribute('width'):o.getAttribute('data-w'))||0;li.height=+(im?im.getAttribute('height'):o.getAttribute('data-h'))||0;
+      li.src=full(o.getAttribute('data-full'))||(im&&(im.getAttribute('src')||im.getAttribute('data-src')))||'';li.alt=im?im.alt||'':o.getAttribute('data-alt')||'';lc.textContent=o.getAttribute('data-cap')||'';lc.hidden=!lc.textContent;
+      ln.textContent=list.length>1?(k+1)+' / '+list.length:'';lb.classList.toggle('one',list.length<2);
+    }
+    function go(d){if(list.length<2)return;k=(k+d+list.length)%list.length;show()}
+    function open(o){
+      list=[].slice.call(document.querySelectorAll('.lbo[data-g="'+o.getAttribute('data-g')+'"]'));k=Math.max(0,list.indexOf(o));from=o;
+      show();lb.hidden=false;root.classList.add('lbon');lb.focus();
+      try{history.pushState({lb:1},'');pushed=true}catch(e){pushed=false}
+    }
+    function close(viaHistory){
+      if(lb.hidden)return;lb.hidden=true;root.classList.remove('lbon');li.removeAttribute('src');
+      if(pushed&&!viaHistory){pushed=false;try{history.back()}catch(e){}}
+      pushed=false;if(from)try{from.focus({preventScroll:true})}catch(e){}
+    }
+    document.addEventListener('click',function(e){var o=e.target.closest&&e.target.closest('.lbo');if(o){e.preventDefault();open(o)}});
+    bx.addEventListener('click',function(){close(false)});
+    bp.addEventListener('click',function(){go(-1)});bn.addEventListener('click',function(){go(1)});
+    lb.addEventListener('click',function(e){if(e.target===lb)close(false)});
+    window.addEventListener('popstate',function(){if(!lb.hidden){pushed=false;close(true)}});
+    document.addEventListener('keydown',function(e){
+      if(lb.hidden)return;
+      if(e.key==='Escape'){e.preventDefault();close(false)}
+      else if(e.key==='ArrowRight'){go(1)}else if(e.key==='ArrowLeft'){go(-1)}
+      else if(e.key==='Tab'){var f=[bx,bp,bn].filter(function(b){return b.offsetParent!==null}),i=f.indexOf(document.activeElement);
+        e.preventDefault();f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus()}
+    });
+    var x0=null,y0=0;
+    lb.addEventListener('touchstart',function(e){if(e.touches.length===1){x0=e.touches[0].clientX;y0=e.touches[0].clientY}else x0=null},{passive:true});
+    lb.addEventListener('touchend',function(e){
+      if(x0===null)return;var t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;
+      if(Math.abs(dx)>40&&Math.abs(dx)>Math.abs(dy)*1.2)go(dx<0?1:-1);
+      else if(dy>90&&dy>Math.abs(dx)*1.5)close(false);
+    },{passive:true});
+  }
+  /* якорь на свёрнутый блок (цены): раскрыть его */
+  document.addEventListener('click',function(e){var l=e.target.closest&&e.target.closest('a[href^="#"]');if(!l)return;var t=document.getElementById(decodeURIComponent(l.getAttribute('href').slice(1)));if(t&&t.tagName==='DETAILS')t.open=true});
+  /* «Скопировать» у реквизитов */
+  [].forEach.call(document.querySelectorAll('[data-copy]'),function(b){b.addEventListener('click',function(){
+    var v=b.getAttribute('data-copy'),o=b.parentNode.querySelector('.ok');
+    function done(){if(o)o.textContent=b.getAttribute('data-ok')||''}
+    try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(v).then(done,function(){});return}}catch(e){}
+  })});
+  /* поделиться: share, иначе копируем, иначе выделяем ссылку */
+  var sb=document.getElementById('share'),so=document.getElementById('share-ok'),su=document.getElementById('share-url');
+  if(sb)sb.addEventListener('click',function(){
+    var url=location.href.split('#')[0];
+    function ok(){if(so)so.textContent=sb.getAttribute('data-ok')}
+    function pick(){if(su){su.value=url;su.classList.remove('vh');su.className='surl';su.removeAttribute('aria-hidden');su.focus();su.select()}if(so)so.textContent=''}
+    function copy(){
+      try{if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(ok,pick);return}}catch(e){}
+      pick();
+    }
+    try{if(navigator.share){navigator.share({title:document.title,url:url}).catch(function(err){if(!err||err.name!=='AbortError')copy()});return}}catch(e){}
+    copy();
+  });
+})();
+</script>
+</body>
+</html>
